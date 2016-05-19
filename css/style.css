@@ -11,7 +11,12 @@
 	transition: all 0.5s;
 }
 
+@keyframes color{
+	from {color:red;}
+	to {color:green;}
+}
 html, body {
+	background-color:black;
 	margin:0;
 	padding:0;
 	min-height: 100%;
@@ -19,8 +24,8 @@ html, body {
 }
 
 body {
-	color: #292929;
-	background: #fff9f5;
+	color: white;
+	background:black;
 	-webkit-font-smoothing:antialiased;
 	oz-osx-font-smoothing: grayscale;
 	font-family: 'Open Sans', sans-serif;
@@ -48,6 +53,8 @@ b, strong {
 h1,h2,h3,h4{
 	font-family: 'Raleway', sans-serif;
 	font-weight:600;
+	animation: color 5s infinite;
+	animation-direction:alternate;
 }
 
 h2 {
